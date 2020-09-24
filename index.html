@@ -1,18 +1,287 @@
----
-layout: default
----
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alexander-Ibeh | Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <link rel="stylesheet" href="Template/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <!--harlex XD...remember, jQuery is completely optional -->
+    <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+    <script type="text/javascript" src="Template/js/jquery.particleground.js"></script>
+    <script type="text/javascript" src="Template/js/demo.js"></script>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        body, body p, body span{
+            font-family: 'Comic Sans MS', serif;
+            color:white !important;
+            font-size:1.5em;
+        }
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+        p, h1, h2, h3, h4, h5, h6, a {
+            color: white !important;
+        }
+
+        a:hover{
+            color:blue !important;
+        }
+    </style>
+</head>
+
+<body style="background-color:hsl(231, 58%, 2%)">
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close" style="background-color: hsl(191, 73%, 8%);">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow" style="background-color: hsl(191, 73%, 8%);">
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="row" style="background-color: hsl(231, 58%, 2%)">
+        <div id="particles">
+            <div id="intro">
+                <h2 style="font-family: 'Comic Sans MS'">Hi 👋 , I'm Alexander</h2>
+                <h2 style="font-family: 'Comic Sans MS'">A</h2>
+                <h2 style="font-family: 'Comic Sans MS'">Software Developer</h2>
+                <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
+                <a href="https://github.com/harlexai/" style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
+                &nbsp
+                <a href="https://www.twitter.com/harlexkhal/" style="color: white;"><i class="fab fa-twitter" style="font-size: 2em;"></i></a>
+                &nbsp
+                <a href="https://www.linkedin.com/in/alexander-ibeh-776814164/" style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
+                &nbsp
+                <br /><br /><br />
+                <a href="#" class="btn-rounded-white">Download Résumé</a>
+            </div>
+        </div>
+    </div>
+    <!-- End #lead -->
+
+    <div id="about" style="border-color:hsl(189, 73%, 11%); margin-top:620px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p style="font-size:18px">
+                        I'm a student of Material Science Engineering and extensive personal training in
+                        Software Engineering and API development. Fluent in English with excellent
+                        communication and interpersonal skills. I'm also a fast learner with strong time
+                        management and multi-tasking skills. I have strong work ethic in team or individual
+                        settings to drive product success and process efficiency. I possess a strong troubleshooting 
+                        and problem solving skills with an analytical mindset.
+                        I have over 3 years of experience as a software engineer, and have worked at small startups .
+                        While I'm a proficient full-stack developer, my expertise is in building scalable backend services.
+                        I love building things, I have a strong understanding of low level systems architecture and design and enjoy building low-level systems during my free time.
+                         While hard engineering problems are often intrinsically fun to tackle,
+                        I'm most attracted to solving real customer problems with a business justification.
+                        <!--I'm looking for a software engineering role where i can work independently or on a team,
+                        and gain experience with architecture and workflows.-->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="education" style="border-color:hsl(200, 82%, 8%)">
+        <h2 class="heading">Education</h2>
+        <div class="education-block" style ="background-color: hsl(191, 73%, 8%); border-color: hsl(222, 51%, 4%);">
+            <h3>Federal University Of Technology, Owerri</h3>
+            <span class="education-date">Nov 2015 - Present</span>
+            <h4>Bachelor of Engineering in Materials Science Engineering</h4>
+            <p>
+                Expected to graduate 2021
+            </p>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt" style="background-color: hsl(231, 58%, 2%); border-color:hsl(200, 82%, 8%)">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large" style ="background-color: hsl(191, 73%, 8%); border-color: hsl(222, 51%, 4%); padding:20px 0px 20px 0px;">
+                    <div class="col-md-4">
+                        <img src="images/Hyde.gif"  style = "width:100%;">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <!-- End .project-image -->
+                    <div class="col-md-7">
+                        <h3>Hyde Messenger</h3>
+                        <p>
+                            Hyde is an Android Platform mobile Application, its a quick messaging Application that was made with JavaScript and built with Phonegap
+                        </p>
+                        <!--<a href="#">View Project</a>-->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+
+            <div class="row">
+                <div class="project shadow-large" style ="background-color: hsl(191, 73%, 8%); border-color: hsl(222, 51%, 4%); padding:20px 0px 20px 0px;">
+                    <div class="col-md-4">
+                        <img src="images/TimeTableGenerator.gif"  style = "width:100%;">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <!-- End .project-image -->
+                    <div class="col-md-7">
+                        <h3>Time-Table Generator</h3>
+                        <p>
+                           A Time-Table Generator that can be used to generate optimal schedule fixes from a users input of several schedules. 
+                           its algorithm takes an approach of organising task appropriately while trying to avoid clashes. 
+                           made for the purpose of organising school lecture time-table. built with PHP
+                        </p>
+                        <!--<a href="#">View Project</a>-->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="experience" class="background-alt" style="background-color: hsl(231, 58%, 2%); border-color:hsl(200, 82%, 8%)">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date = "July 2019 – December 2019" style ="background-color: hsl(191, 73%, 8%); border-color: hsl(222, 51%, 4%);">
+                <h3 style="color:blue !important;">Newbisco LTD</h3>
+                <h4>Engineer</h4>
+                <p>
+                    Worked as an intern Engineer at Newbisco LTD, a production industry recognised for producing biscuits,
+                    i was responsible for every technology related issues ranging from maintenance of production machines to installation and maintenance of communication devices
+                </p>
+            </div>
+
+            <div data-date="September 2019 – January 2019" style ="background-color: hsl(191, 73%, 8%); border-color: hsl(222, 51%, 4%);">
+                <h3 style="color:deeppink !important;">HJB-Smith</h3>
+                <h4>FullStack Developer</h4>
+                <p>
+                    I was responsible for Managing a development team of 4 in the development of a dynamic webpage that requires frequent update from a server.
+                    also reported and fixed bugs on legacy codes on some projects.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li style = "background-color: hsl(198, 100%, 38%); color:white">C</li>
+            <li style = "background-color: hsl(207, 100%, 26%); color:white">C++</li>
+            <li style = "background-color: hsl(47, 100%, 32%); color:white">JavaScript</li>
+            <li style = "background-color: hsl(260, 100%, 30%); color:white">PHP</li>
+            <li style = "background-color: hsl(3, 100%, 33%); color:white">Java</li>
+            <li style = "background-color: #E83951; color:white">Rust</li>
+            <li style = "background-color: hsl(224, 68%, 24%); color:white">MYSQL</li>
+            <li  style = "background-color: hsl(121, 0%, 29%); color:white">Phonegap (Adobe Cordova)</li>
+            <li style = "background-color: hsl(0, 0%, 11%); color:white">Unity</li>
+            <li style = "background-color: hsl(279, 100%, 27%); color:white">Microsoft Visual Studio</li>
+            <li style = "background-color: hsl(198, 100%, 38%); color:white">Visual Studio Code</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/harlexibeh04@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2020 IBEH ALEXANDER . U
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <!--
+                  <div class="col-sm-5 social">
+                    <ul>
+                      <li>
+                        <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                         <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                       <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                       <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      </li>
+                   </ul>
+                </div>
+              -->
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
